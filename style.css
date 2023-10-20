@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* spaces */
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 6px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 32px;
+  --space-4xl: 40px;
+  --space-5xl: 48px;
+  --space-section: 96px;
+  /* colors */
+  --colore-main: #06c167;
+  --color-light: #f3fcf7;
+  --color-100: #1d1d1f;
+  --color-300: #545459;
+  --color-800: #c5cec9;
+  --color-paper: #fff;
+}
+
+/* ------------------------------------ */
+/* -------------GENERAL---------------- */
+/* ------------------------------------ */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------ */
+/* -------------HEADER----------------- */
+/* ------------------------------------ */
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--color-light);
+  width: 100%;
+  padding: var(--space-5xl) var(--space-3xl);
+  gap: var(--space-3xl);
+}
+
+/* -------------UP------------------- */
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.foodies {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--space-3xl);
+  font-family: "Mada", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-100);
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Mada", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-100);
+}
+
+nav a:hover {
+  color: var(--colore-main);
+}
+
+.menu-2 {
+  display: none;
+}
+
+/* -------------DOWN------------------- */
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  gap: var(--space-3xl);
+}
+
+/* -------------LEFT------------------- */
+
+.header-content .title-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5xl);
+  flex: 1;
+}
+
+.header-content .title-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+}
+
+.header-content .title-content h1 {
+  font-family: "Mada", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+.header-content .title-content h4 {
+  font-family: "Mada", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 56px;
+  border-radius: 41px;
+  background: var(--colore-main);
+  gap: var(--space-sm);
+  padding: var(--space-lg) var(--space-3xl);
+}
+
+.button a {
+  color: var(--color-paper);
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Mada", sans-serif;
+  text-decoration: none;
+}
+
+.header-content .brand-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4xl);
+  flex-wrap: wrap;
+}
+
+.logo-deliveroo {
+  width: 120px;
+  height: 32px;
+}
+
+.logo-foodora {
+  width: 90px;
+  height: 30px;
+}
+
+.logo-uber-eat {
+  width: 110px;
+  height: 20px;
+}
+
+/* -------------RIGHT------------------- */
+
+.header-cover {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+/* ------------------------------------ */
+/* -------------MAIN------------------- */
+/* ------------------------------------ */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-paper);
+  width: 100%;
+  padding: var(--space-section) var(--space-3xl) var(--space-section)
+    var(--space-3xl);
+  gap: var(--space-section);
+}
+
+/* -------------UP------------------- */
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4xl);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.advantage-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: var(--space-xl);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 72px;
+  background: var(--color-light);
+  padding: var(--space-lg);
+}
+
+.advantage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-xs);
+  width: 100%;
+}
+
+.advantage-content h3 {
+  font-family: "Mada", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--color-100);
+}
+
+.advantage-content h4 {
+  font-family: "Mada", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--color-300);
+}
+
+/* -------------DOWN------------------- */
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* -------------LEFT------------------- */
+
+.benefits-cover-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-5xl);
+  width: 100%;
+  max-width: 540px;
+  background: var(--color-light);
+  flex: 1;
+}
+
+.benefits-cover {
+  width: 100%;
+}
+
+/* -------------RIGHT------------------- */
+
+.benefits-content {
+  display: flex;
+  flex-direction: column;
+  font-family: "Mada", sans-serif;
+  gap: var(--space-2xl);
+  width: 100%;
+  max-width: 530px;
+  flex: 1;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.title-container h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-100);
+  margin: 0;
+}
+
+.title-container h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-100);
+  margin: 0;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.benefits-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.benefits-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.benefits-item h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.button-bottom {
+  display: flex;
+  background: var(--colore-main);
+  border-radius: 40px;
+  padding: var(--space-lg) var(--space-3xl) var(--space-lg) var(--space-3xl);
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  width: max-content;
+}
+
+.button-bottom a {
+  font-family: "Mada", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-paper);
+  margin: 0;
+  text-decoration: none;
+}
+
+/* ------------------------------------ */
+/* ----------MEDIA QUERIES------------- */
+/* ------------------------------------ */
+
+/* For Laptop */
+@media screen and (max-width: 1200px) {
+  header {
+    gap: var(--space-section);
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-5xl);
+  }
+
+  .title-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: var(--space-5xl);
+  }
+
+  .title-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5xl);
+  }
+
+  .advantages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--space-5xl) var(--space-xl);
+    grid-template-areas:
+      ". ."
+      ". .";
+    justify-content: center;
+  }
+
+  .advantage-item,
+  .advantage-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-5xl);
+  }
+
+  .benefits-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5xl);
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 680px) {
+  .menu {
+    display: flex;
+  }
+
+  .foodies {
+    display: flex;
+    max-width: 90px;
+  }
+
+  .menu-2 {
+    visibility: visible;
+    width: 24px;
+    height: 24px;
+  }
+
+  nav {
+    visibility: hidden;
+  }
+
+  .menu-2 {
+    display: flex;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: var(--space-5xl);
+  }
+
+  .title-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .title-content h1 {
+    font-size: 3.4rem;
+  }
+
+  .main-content {
+    padding: var(--space-5xl) var(--space-xl);
+    gap: var(--space-5xl);
+  }
+
+  .advantages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--space-xl);
+    grid-template-areas:
+      ". ."
+      ". .";
+    justify-content: center;
+  }
+
+  .advantage-item,
+  .advantage-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-5xl);
+  }
+
+  .benefits-content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xl);
+  }
+
+  .title-container h2 {
+    font-size: 2.25rem;
+  }
+}
